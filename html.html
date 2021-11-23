@@ -1,0 +1,76 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<input type="text" class="form-control" id="love_input" placeholder="enter Love">
+<button onclick="myFunction()" id="love-button" type="button" class="btn btn-primary">Love</button>
+<input type="text" class="form-control" id="pain_input" placeholder="enter Pain">
+<button onclick="myFunction2()" id="pain_button" type="button" class="btn btn-primary">Pain</button>
+<input type="text" class="form-control" id="idea_input" placeholder="enter Idea">
+<button onclick="myFunction3()" id="createProductSubmitButton" type="button" class="btn btn-primary">Idea</button>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">Love</th>
+    <th class="tg-0lax">Pain</th>
+    <th class="tg-0lax">Ideas</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td id="2-1" type="text" class="tg-0lax"></td>
+    <td id="2-2" type="text" class="tg-0lax"></td>
+    <td id="2-3" type="text" class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td id="3-1" class="tg-0lax"></td>
+    <td id="3-2" class="tg-0lax"></td>
+    <td id="3-3" class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td id="4-1" class="tg-0lax"></td>
+    <td id="4-2" class="tg-0lax"></td>
+    <td id="4-3" class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td id="5-1" class="tg-0lax"></td>
+    <td id="5-2" class="tg-0lax"></td>
+    <td id="5-3" class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td id="6-1" class="tg-0lax"></td>
+    <td id="6-2" class="tg-0lax"></td>
+    <td id="6-3" class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td id="7-1" class="tg-0lax"></td>
+    <td id="7-2" class="tg-0lax"></td>
+    <td id="7-3" class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table>
+
+<script>
+i = 1
+function myFunction() {
+ i = i + 1
+ 
+ document.getElementById(i + '-1').innerHTML = document.getElementById('love_input').value;
+}
+j = 1
+function myFunction2() {
+ j = j + 1
+ 
+ document.getElementById(j + '-2').innerHTML = document.getElementById('pain_input').value;
+}
+k = 1
+function myFunction3() {
+ k = k + 1
+ 
+ document.getElementById(k + '-3').innerHTML = document.getElementById('idea_input').value;
+}
+</script>
