@@ -11,3 +11,6 @@ app.get('/', function(req, res) {
 
 app.listen(port);
 console.log('Server started at http://localhost:' + port);
+
+app.use(express.static(path.resolve('./pics')));
+    app.use('/pics', express.static(path.resolve('./pics')));
