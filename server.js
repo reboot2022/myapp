@@ -13,8 +13,8 @@ app.get('/loginpage2', function(req, res) {
   res.sendFile(path.join(__dirname, '/loginpage2.html'));
 });
 
-app.get('/memerableinfo', function(req, res) {
-  res.sendFile(path.join(__dirname, '/memerableinfo.html'));
+app.get('/memorableinfo', function(req, res) {
+  res.sendFile(path.join(__dirname, '/memorableinfo.html'));
 });
 
 app.listen(port);
