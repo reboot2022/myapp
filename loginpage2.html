@@ -1,19 +1,38 @@
 <html>
-<body>
+  <style>
+    .container {
+      background-image: url("pics/login.png");
+      background-repeat: no-repeat;
+      background-size:contain;
+      height: 669px;
+      width: 706px;
+      position: relative;
+      
+    }
+    .container .button-holder {
+      position: absolute;
+      right: 0%;
+      bottom: 5%;
+    }
 
-<h2>Do want to know how to log into your internet banking</h2>
-<div>
-<img src="pics/login.png" alt="login page" width="1000" height="666">
+    .container .video {
+      position: absolute;
+      bottom: 50%;
+    }
+
+    iframe {
+      display: block;
+      bottom: 50%;
+    }
+  </style>
+<body>
+<div class="container">
+  <div class="video">
+    <iframe height="350" width="600"
+      src="https://www.youtube.com/embed/F6m0ghjadlw">
+    </iframe>
 </div>
-<div>
-  <iframe height="350" width="600"
-  src="https://www.youtube.com/embed/F6m0ghjadlw">
-</iframe>
-</div>
-<div>
-  <p><button class="w3-button w3-padding-large w3-white w3-border"><b><a href="/memerableinfo">Help</a></b></button></p>
-</div>
-</div>
+  
 
 
 </body>
