@@ -15,15 +15,24 @@
     right: 0%;
     bottom: 5%;
   }
+  video {
+      display: block;
+      position: absolute;
+      height: 480px;
+      width: 640px;
+      margin-top: 50px;
+      margin-left: 33px;
+    }
 </style>
 <body>
-
-<div class="container">
-  <div class="button-holder">
-    <button><b><a href="/memorableinfo2">Help</a></b></button>
-  </div>
-</div>
-
+    <div class="container">
+        <video class="video" controls
+          src="https://storage.googleapis.com/team-greyfriars.appspot.com/Screen%20Recording%202022-06-15%20at%2013.00.53.mov">
+        </video>
+        <div class="button-holder">
+          <button><b><a href="/">Done</a></b></button>
+        </div>
+      </div>
 
 <div>
     <p><button class="w3-button w3-padding-large w3-white w3-border"><b><a href="/login">Back to the login page</a></b></button></p>
@@ -31,5 +40,3 @@
 
 </body>
 </html>
-
-

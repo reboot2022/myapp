@@ -21,6 +21,10 @@ app.get('/memorableinfo', function(req, res) {
   res.sendFile(path.join(__dirname, '/memorableinfo.html'));
 });
 
+app.get('/memorableinfo2', function(req, res) {
+  res.sendFile(path.join(__dirname, '/memorableinfo2.html'));
+});
+
 app.listen(port);
 console.log('Server started at http://localhost:' + port);
 
