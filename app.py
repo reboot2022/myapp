@@ -15,8 +15,8 @@ if 'page' not in st.session_state:
     st.session_state["page"] = 'page1'
 
 
-def play_video():
-    st.video("https://storage.googleapis.com/team-greyfriars.appspot.com/Screen%20Recording%202022-06-15%20at%2011.43.55.mov")
+def play_video(address):
+    st.video(address)
 
 def login_values(login_id,password_):
     if (login_id == 'Ishant') and (password_=='123456'):
@@ -44,7 +44,7 @@ def login_page():
         close = st.button('close', key='close_play',kwargs={'allign':'left'})
 
     if p_video and not close:
-        play_video()
+        play_video('https://storage.googleapis.com/team-greyfriars.appspot.com/recording3.mov')
 
 def memorable_info():
     st.header("Memorable Info")
@@ -65,7 +65,7 @@ def memorable_info():
         close = st.button('close', key='close_play')
 
     if p_video and not close:
-        play_video()
+        play_video('https://storage.googleapis.com/team-greyfriars.appspot.com/recording4.mov')
 
 
 def main():
