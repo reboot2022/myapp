@@ -6,7 +6,15 @@ const port = process.env.PORT || 8080;
 
 // sendFile will go here
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '/index.html'));
+  res.sendFile(path.join(__dirname, '/login.html'));
+});
+
+app.get('/loginpage2', function(req, res) {
+  res.sendFile(path.join(__dirname, '/loginpage2.html'));
+});
+
+app.get('/memerableinfo', function(req, res) {
+  res.sendFile(path.join(__dirname, '/memerableinfo.html'));
 });
 
 app.listen(port);
